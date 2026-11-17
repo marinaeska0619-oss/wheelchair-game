@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#0b1d3a" />
+  <title>Wheelchair Park</title>
+</head>
+<body>
+  <div id="ui">
+    <b>Твой ID</b>
+    <div class="row"><input id="myid" readonly value="подключение..." /><button id="copy">Скопировать</button></div>
+    <b>ID друга</b>
+    <div class="row"><input id="otherid" placeholder="вставь ID" /><button id="join">Подключиться</button></div>
+    <button id="skin" style="width:100%;margin:2px 0 8px;padding:6px;border:0;border-radius:6px;background:#e63946;color:#fff;font-weight:700;cursor:pointer">Скин</button>
+    <div id="status">Игроков онлайн: 1</div>
+  </div>
+  <div id="touch">
+    <div class="pad left">
+      <button data-k="left">◀</button>
+      <button data-k="right">▶</button>
+    </div>
+    <div class="pad right">
+      <button class="small" data-k="hand">Ручник</button>
+      <button class="small" data-act="jump">Прыжок</button>
+      <button data-k="down">▼</button>
+      <button data-k="up">▲</button>
+    </div>
+    <div class="top">
+      <button class="small" data-act="skin">Скин</button>
+      <button class="small" data-act="respawn">↻</button>
+      <button class="small" id="menu">☰</button>
+    </div>
+  </div>
+  <button id="fs" title="Полный экран (F11)">⛶</button>
+  <button id="snd" title="Звук (M)">🔊</button>
+  <div id="hud"><span id="speed">0</span> км/ч</div>
+  <div id="dbg"></div>
+  <div id="warn"></div>
+  <div id="granny">🧓 Бабок сбито: <b id="gcount">0</b></div>
+  <div id="hint">Коляска перевёрнута — нажми R</div>
+  <div id="help">W/S — газ/тормоз · A/D — руль · Пробел — олли · T — скин · F11 — полный экран · M — звук · Shift — ручник · R — респавн · ЛКМ + мышь — камера · колесо — зум</div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
